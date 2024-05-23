@@ -1,0 +1,58 @@
+<html>
+
+
+<head>
+
+<style>
+
+body {
+    background-image:
+url('purple.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+body{background-color:mediumseagreen}
+body{text-align:center}
+body{font-size:30px}
+body{padding-top:100px}
+body{padding-right:500px}
+body{padding-left:500px}
+</style>
+
+<script>  
+    function validateform(){  
+    var name=document.myform.name.value;  
+    var password=document.myform.password.value;  
+      
+    if (name=="Ananya" && password=="123456"){  
+      alert("Login Successfully");  
+      return true;  
+}
+ else
+{
+ alert("enter the valid details")
+ return false;
+}
+ 
+  
+    }  
+    </script>   
+
+</head>
+
+<body>  
+     <fieldset>
+         <legend align=center><h2>Login</h2></legend>
+<form name="myform" action="india tour.html" onsubmit="return validateform()" >  
+Name: <input type="text" name="name"><br/>  
+Password: <input type="password" name="password">
+<br>
+<br>  
+<input type="submit" value="Login">  
+</form>
+</fieldset>  
+</body>
+</html>
